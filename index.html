@@ -2,7 +2,7 @@
     <head>
         <title>Keshab Agarwal's User Page</title>
         <meta charset="utf-8">
-        
+        <link href="main.css" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -14,13 +14,13 @@
             </nav>
             <header>
                 <h1>Welcome To My Webpage!</h1>
-                <figure>
+                <picture>
+                    <source src = "0.jpg" type = "image/jpg">
                     <img src="0.jpg">
-                    <figcaption>This is me.</figcaption>
-                </figure>
+                </picture>
             </header>
             
-            <p>Hi! Welcome to my webpage. <br>I am Keshab Agarwal, a second year Computer Science major at University of California, San Diego.</p>
+            <p>Hi! Welcome to my webpage. <br>I am Keshab Agarwal, a second year Computer Science major at University of California, San Diego. </p>
             <div>
             <section>
                 <h2><span>Some of my favorite topics in CS are:</span></h2>
@@ -32,6 +32,45 @@
             </section>
             </div>
 
+                <table>
+                    <caption>Winter 2021</caption>
+                    <colgroup>
+                        <col>
+                        <col span="2" class="Course">
+                        <col span="2" class="Units">
+                    </colgroup>
+                    <tr>
+                        <td> </td>
+                        <th scope="col">Course</th>
+                        <th scope="col">Units</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.</th>
+                        <td>CSE 110</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.</th>
+                        <td>CSE 101</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.</th>
+                        <td>CSE 130</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.</th>
+                        <td>TDGE 11</td>
+                        <td>4</td>
+                    </tr>
+                    <template id="SumRow">
+                        <tr>
+                          <td class="sum"></td>
+                          <td></td>
+                        </tr>
+                      </template>
+                </table>
             <hr>
 
             <div>
@@ -45,24 +84,53 @@
             </aside>
             </div>
 
+            <canvas width="1000" height="20" style="border:1px solid #000000;">
+            </canvas>
+
+            <svg viewBox="0 0 1000 20" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+                <ellipse cx="500" cy="10" rx="300" ry="7.5">
+            </svg>
+
+            
+
             <p>Here is my favourite quote by Gandhi:</p>
             <blockquote>Be the change you want to see in the world.</blockquote>
             <br>
-            <code>while(!successful){<br>
-                workHard();<br>
-            }
-            </code>
+            
+            <p>Here is the link to a playlist I like:</p>
+            <iframe src="https://open.spotify.com/embed/playlist/16GI94X4Bepis4jTVnIdVJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br>
+        <p>This is a video of the susnet from La Jolla Shores shot by me.</p>
+        <video controls width="250">
+            <source src="./sunset.mp4"
+                    type="video/mp4">
+        
+            Sorry, your browser doesn't support embedded videos.
+        </video>
 
-        </main>
+        <figure>
+            <figcaption>Listen to some white noise:</figcaption>
+            <audio
+                controls
+                src="white_noise.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+        
+    </main>
+        
     </body>
-    <iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    allowtransparency = "true"
-    allow = "encrypted-media"
-    src="https://open.spotify.com/playlist/16GI94X4Bepis4jTVnIdVJ?si=RR0phrN5RA-2_TYtLhkgzg">
-    </iframe>
-
-    <footer>Email me at <blockquote>keagarwa@ucsd.edu</blockquote></footer>
+    <br><br>
+    <br><br><br>
+    <footer>
+        <details>
+            <summary>Code to live life by.</summary>
+            <code>while(!successful){<br>
+                &emsp; workHard();<br>
+                }
+            </code>
+    </details>
+        
+        <p>Email me at <blockquote>keagarwa@ucsd.edu</blockquote></p></footer>
 </html>
