@@ -12,6 +12,43 @@
     border-top-right-radius: 10% 5%;
   }
   
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 5px;
+    padding: 2px;
+    font-size: 15px;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  @media screen and (min-width: 480px) {
+    body {
+      background-color: white;
+    }
+  }
+  
 .skills {
     position: sticky;
     background-color: rgba(0,230,230,.5);
@@ -65,6 +102,13 @@ video{
     background-color: hsl(180, 100%, 45%);
     color: darkblue;
     text-decoration: underline;
+  }
+  h3:hover{
+      background-color: yellow;
+  }
+
+  a:active {
+    background-color: yellow;
   }
   span {
     background-color: rgba(255,255,255,.5);
