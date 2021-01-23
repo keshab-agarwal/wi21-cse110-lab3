@@ -1,4 +1,8 @@
 /* Main css styling sheet for index.html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Monsterrat', sans-serif;
+}
 .box {
     background-color: rgba(0,255,255,.5);
     border-width: 10px;
@@ -9,6 +13,28 @@
   }
   
 .skills {
+    position: sticky;
+    background-color: rgba(0,230,230,.5);
+    width: 500px;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.topics{
+    min-width: 500px;
+    max-width: 750px;
+    border-width: 2px;
+}
+
+video{
+    position: static;
+    display: block;
     background-color: rgba(0,230,230,.5);
     width: 500px;
     border-width: 3px;
@@ -36,8 +62,9 @@
 }
 
   h2 {
-    background-color: black;
-    color: white;
+    background-color: hsl(180, 100%, 45%);
+    color: darkblue;
+    text-decoration: underline;
   }
   span {
     background-color: rgba(255,255,255,.5);
