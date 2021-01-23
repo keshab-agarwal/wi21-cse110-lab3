@@ -15,11 +15,17 @@
             </nav>
             <div class = "box">
             <header>
-                <h1>Welcome To My Webpage!</h1>
+                <h1 style="text-align: center;">Welcome To My Webpage!</h1>
                 <picture>
                     <source srcset = "0.jpg" type = "image/jpg" media="(min-width: 800px)">
                     <img src="0.jpg" alt="This is me.">
                 </picture>
+                <style>
+                    picture {display: block; 
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;}
+                </style>
             </header>
             
             <p>Hi! Welcome to my webpage. <br>I am Keshab Agarwal, a second year Computer Science major at University of California, San Diego. I am a hard wrking and focussed person who loves coding and I have excellent team skills. I have experience in the following languages:</p>
@@ -34,7 +40,7 @@
             <p>This website is the first piece of HTML that I am writing and I am really looking forward to learning more about WebDev and software engineering as this quarter progresses.</p>
             <div>
             <section>
-                <h2><span>Some of my favorite topics in CS are:</span></h2>
+                <h2><span class="topics">Some of my favorite topics in CS are:</span></h2>
                 <ol>
                 <li><em>Data Structures and Algorithms</em></li>
                 <li><strong>Cybersecurity</strong></li>
@@ -108,7 +114,7 @@
             </svg>
 
             <p>Here is my favourite quote by Gandhi:</p>
-            <blockquote>Be the change you want to see in the world.</blockquote>
+            <blockquote style="display: inline;">Be the change you want to see in the world.</blockquote>
             <br>
             
             <p>Here is the link to a playlist I like:</p>
